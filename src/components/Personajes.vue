@@ -11,7 +11,7 @@ const imagenesError = ref(new Set()) // Set para trackear qué imágenes han fal
 
 const loadPersonajes = async () => {
     const idSerie = route.params.serie
-    const data = await service.getPersonajes(idSerie)
+    const data = await service.getPersonajesSerie(idSerie)
     personajes.value = data
     imagenesError.value.clear() // Limpiar errores anteriores
 }

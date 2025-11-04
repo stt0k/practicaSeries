@@ -15,7 +15,7 @@ const personaje = ref ({
 
 const idSerieSeleccionada = ref(0)
 
-const insertDepartamento = async () => {
+const insertPersonaje = async () => {
     try {
         mensaje.value = ""
         

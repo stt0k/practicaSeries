@@ -164,7 +164,7 @@ onUnmounted(() => {
                         class="text-white/80 hover:text-white hover:bg-white/10 block px-3 py-2 text-base font-medium rounded-md"
                         active-class="text-white bg-white/10"
                     >
-                        Departamentos
+                        Series
                     </router-link>
                     
                     <!-- Mobile Series Section -->
@@ -176,10 +176,10 @@ onUnmounted(() => {
                             v-for="serie in series" 
                             :key="serie"
                             @click="closeMobileMenu"
-                            :to="`/empleadosoficios/${serie}`"
+                            :to="`/empleadosoficios/${serie.idSerie}`"
                             class="text-white/80 hover:text-white hover:bg-white/10 block px-6 py-2 text-sm font-medium rounded-md"
                         >
-                            {{ serie }}
+                            {{ serie.nombre }}
                         </router-link>
                     </div>
                 </div>
